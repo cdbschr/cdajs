@@ -1,0 +1,79 @@
+:root {
+  --bg: #1c1c1c;
+  --primary-text: #fff;
+  --primary-title: #109ddf;
+  --alert: #881e1e;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background: var(--bg);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  font-family: 'Roboto', sans-serif;
+}
+
+main>h1 {
+  margin: 15px auto 20px;
+  color: var(--primary-title);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+#form {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 30px;
+}
+
+#form input {
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+#form button {
+  margin-left: 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+#alert {
+  margin-bottom: 15px;
+  padding: 20px;
+  background: var(--alert);
+  border-radius: 15px;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+main > p, main>span {
+  color: var(--primary-text);
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+main > p:nth-child(1), main > p:nth-child(2) {
+  margin-top: 50px;
+}
